@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class AccountsController {
 
-    private IAccountsService iAccountsService;
+    private final IAccountsService iAccountsService;
 
     @Value("${build.version}")
     private String buildVersion;

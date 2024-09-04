@@ -45,7 +45,7 @@ public class CardsController {
     @Autowired
     private CardsContactInfoDto cardsContactInfoDto;
 
-    private ICardsService iCardsService;
+    private final ICardsService iCardsService;
 
     @Operation(
             summary = "Create Card REST API",
